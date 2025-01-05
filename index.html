@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <style>
+        /* Reset styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Full height sections with flexbox for centering content */
+        .section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full height section */
+            margin-bottom: 50px; /* Default spacing between sections */
+        }
+
+        /* Image styles */
+        .section img {
+            width: 100%; /* Make the image take up full width */
+            height: auto; /* Ensure the image maintains its aspect ratio */
+            object-fit: cover; /* Ensure the image covers the container */
+        }
+
+        /* Reduce spacing for mobile screens */
+        @media (max-width: 768px) {
+            .section {
+                margin-bottom: 20px; /* Decrease spacing between images */
+                height: auto; /* Allow sections to adjust to content */
+            }
+
+            .section img {
+                width: 100%; /* Stretch image to fit screen width */
+                height: auto; /* Maintain aspect ratio */
+                object-fit: cover; /* Prevent image distortion */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Section 1 to Section 21 -->
+    <div class="section"><img src="1.jpg" alt="Image 1"></div>
+    <div class="section"><img src="2.jpg" alt="Image 2"></div>
+    <div class="section"><img src="3.jpg" alt="Image 3"></div>
+    <div class="section"><img src="4.jpg" alt="Image 4"></div>
+    <div class="section"><img src="5.jpg" alt="Image 5"></div>
+    <div class="section"><img src="6.jpg" alt="Image 6"></div>
+    <div class="section"><img src="7.jpg" alt="Image 7"></div>
+    <div class="section"><img src="8.jpg" alt="Image 8"></div>
+    <div class="section"><img src="9.jpg" alt="Image 9"></div>
+    <div class="section"><img src="10.jpg" alt="Image 10"></div>
+    <div class="section"><img src="11.jpg" alt="Image 11"></div>
+    <div class="section"><img src="12.jpg" alt="Image 12"></div>
+    <div class="section"><img src="13.jpg" alt="Image 13"></div>
+    <div class="section"><img src="14.jpg" alt="Image 14"></div>
+    <div class="section"><img src="15.jpg" alt="Image 15"></div>
+    <div class="section"><img src="16.jpg" alt="Image 16"></div>
+    <div class="section"><img src="17.jpg" alt="Image 17"></div>
+    <div class="section"><img src="18.jpg" alt="Image 18"></div>
+    <div class="section"><img src="19.jpg" alt="Image 19"></div>
+    <div class="section"><img src="20.jpg" alt="Image 20"></div>
+    <div class="section"><img src="21.jpg" alt="Image 21"></div>
+
+</body>
+</html>
